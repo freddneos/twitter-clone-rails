@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Rubytter</h1>
+  <h4>A Rails, Actioncable and React demo</h4>
+
+  <%= render partial: 'form' %>
+
+  <%= react_component("Posts/PostsWrapper", { posts: @posts }) %>
+
+</div>

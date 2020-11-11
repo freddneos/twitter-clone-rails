@@ -3,9 +3,8 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.string :username , default: 'Fredz'
       t.text :body
-      t.integer :likes_count
-      t.integer :repost_count
-
+      t.integer :likes_count , default: 0
+      t.integer :repost_count , default: 0
       t.timestamps
     end
   end
